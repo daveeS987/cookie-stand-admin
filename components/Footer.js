@@ -1,9 +1,9 @@
-import React from 'react';
+import Link from 'next/link';
 
 function Footer() {
   return (
-    <div>
-      <h2>Footer</h2>
+    <div className='flex items-center justify-between p-4 text-gray-100 bg-gray-500'>
+      <p className='text-xl'>8 Locations worldwide</p>
     </div>
   );
 }
