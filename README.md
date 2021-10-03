@@ -8,7 +8,7 @@ Daniel Dills, Prabin Singh, Wondwosen Tsige, Michael Ryan
 
 ## Links & Resources
 
-- [Deployed Link]()
+- [Deployed Link](https://cookie-stand-admin-three-red.vercel.app/)
 
 ## Overview
 
