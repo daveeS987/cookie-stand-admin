@@ -12,19 +12,19 @@ function Form() {
       </div>
       <div className='flex flex-wrap justify-between gap-8 mt-8 text-center justify-items-center'>
         <div className='flex-grow'>
-          <h2 className='text-gray-200'>Minimum Customer Per Hour</h2>
+          <h2 className='text-gray-300'>Minimum Customer Per Hour</h2>
           <input type='text' className='w-full' />
         </div>
         <div className='flex-grow'>
-          <h2 className='text-gray-200'>Maximum Customer Per Hour</h2>
+          <h2 className='text-gray-300'>Maximum Customer Per Hour</h2>
           <input type='text' className='w-full' />
         </div>
         <div className='flex-grow'>
-          <h2 className='text-gray-200'>Average Cookies Per Sale</h2>
+          <h2 className='text-gray-300'>Average Cookies Per Sale</h2>
           <input type='text' className='w-full' />
         </div>
         <div className='flex-grow mb-8'>
-          <button className='w-full p-2 px-8 mx-4 text-gray-200 border-2 border-gray-200 rounded-md'>Create</button>
+          <button className='w-full p-2 px-8 mx-2 text-gray-200 border-2 border-gray-200 rounded-md'>Create</button>
         </div>
       </div>
     </div>
