@@ -1,10 +1,10 @@
-import React from 'react';
+import Layout from '../components/Layout.js';
 
 function Overview() {
   return (
-    <div>
+    <Layout>
       <h1>Overview</h1>
-    </div>
+    </Layout>
   );
 }
 
