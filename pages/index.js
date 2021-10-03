@@ -1,12 +1,12 @@
-import Head from 'next/head';
+import Layout from '../components/Layout';
+import Main from '../components/Main';
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Cookie Stand Admin</title>
-      </Head>
-      <h1>Home</h1>
+      <Layout>
+        <Main />
+      </Layout>
     </>
   );
 }
