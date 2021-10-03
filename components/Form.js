@@ -2,8 +2,8 @@ import React from 'react';
 
 function Form() {
   return (
-    <div className='p-4 mx-24 my-24 bg-gray-400 rounded-md'>
-      <h2 className='text-center'>Create Cookie Stand</h2>
+    <div className='p-12 my-20 bg-gray-800 border-2 border-gray-400 rounded-md mx-36'>
+      <h2 className='text-3xl font-light text-center text-gray-200 '>Create Cookie Stand</h2>
       <div>
         <div>
           <h2>Location</h2>
