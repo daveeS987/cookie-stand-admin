@@ -2,9 +2,13 @@ import Link from 'next/link';
 
 function Footer() {
   return (
-    <div className='flex items-center justify-between p-4 mt-8 text-gray-100 bg-gray-500'>
-      <p className='text-xl'>8 Locations worldwide</p>
-    </div>
+    <nav className='w-full px-8 bg-gray-200 h-36 sm:px-0 pin-b'>
+      <div className='container flex justify-between py-5 mx-auto'>
+        <label className='text-3xl font-bold text-gray-800'>
+          8<span className='font-light'> Locations World Wide</span>
+        </label>
+      </div>
+    </nav>
   );
 }
 

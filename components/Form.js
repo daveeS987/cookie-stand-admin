@@ -2,7 +2,7 @@ import React from 'react';
 
 function Form() {
   return (
-    <div className='p-4 mx-8 my-8 bg-green-500 rounded-md'>
+    <div className='p-4 mx-24 my-24 bg-gray-400 rounded-md'>
       <h2 className='text-center'>Create Cookie Stand</h2>
       <div>
         <div>
