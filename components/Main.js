@@ -25,17 +25,17 @@ function Main() {
     return result;
   };
 
-  function generateRandomNum(min, max) {
+  const generateRandomNum = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
-  }
+  };
 
-  function generateCookiePerHour(minCustomers, maxCustomers, avgCookies) {
-    let cookieSaleEveryHour = [];
+  const generateCookiePerHour = (minCustomers, maxCustomers, avgCookies) => {
+    const cookieSaleEveryHour = [];
     for (let i = 0; i < 14; i++) {
       cookieSaleEveryHour.push(generateRandomNum(minCustomers, maxCustomers) * avgCookies);
     }
     return cookieSaleEveryHour;
-  }
+  };
 
   return (
     <div>
