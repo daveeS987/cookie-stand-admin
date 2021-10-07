@@ -15,3 +15,5 @@ Daniel Dills, Prabin Singh, Wondwosen Tsige, Michael Ryan
 Create a cookie stand admin using nextjs and tailwind css.
 
 ## Feature Tasks & Requirements
+
+## Notes
