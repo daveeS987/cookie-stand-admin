@@ -20,7 +20,11 @@ function Main() {
   const calculate = (obj) => {
     const result = {
       location: obj.location,
-      hourly_sale: generateCookiePerHour(obj.minCustomers, obj.maxCustomers, obj.avgCookies),
+      hourly_sale: generateCookiePerHour(
+        obj.minCustomers,
+        obj.maxCustomers,
+        obj.avgCookies
+      ),
     };
     return result;
   };
@@ -32,7 +36,9 @@ function Main() {
   const generateCookiePerHour = (minCustomers, maxCustomers, avgCookies) => {
     const cookieSaleEveryHour = [];
     for (let i = 0; i < 14; i++) {
-      cookieSaleEveryHour.push(generateRandomNum(minCustomers, maxCustomers) * avgCookies);
+      cookieSaleEveryHour.push(
+        generateRandomNum(minCustomers, maxCustomers) * avgCookies
+      );
     }
     return cookieSaleEveryHour;
   };

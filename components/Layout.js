@@ -8,12 +8,15 @@ function Layout({ children }) {
     <>
       <Head>
         <title>Cookie Stand Admin</title>
-        <meta name="Davee's Cookie Stand Admin" content='A mock cookie stand admin built with nextjs and tailwindcss' />
-        <link rel='icon' href='/cookie.svg' />
+        <meta
+          name="Davee's Cookie Stand Admin"
+          content="A mock cookie stand admin built with nextjs and tailwindcss"
+        />
+        <link rel="icon" href="/cookie.svg" />
       </Head>
-      <body className='flex flex-col min-h-screen'>
+      <body className="flex flex-col min-h-screen">
         <Header />
-        <div class='flex-grow bg-gray-800'>{children}</div>
+        <div className="flex-grow bg-gray-800">{children}</div>
         <Footer />
       </body>
     </>

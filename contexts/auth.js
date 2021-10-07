@@ -20,19 +20,23 @@ export function AuthProvider(props) {
     logout,
   });
 
-  function login(username, password) {
-    // const response = await axios.post(tokenUrl, { username, password });
-    // const decodedAccess = jwt.decode(response.data.access);
-    // const newState = {
-    //   tokens: response.data,
-    //   user: {
-    //     username: decodedAccess.username,
-    //     email: decodedAccess.email,
-    //     id: decodedAccess.user_id,
-    //   },
-    // };
-    // setState((prevState) => ({ ...prevState, ...newState }));
-    console.log('login works');
+  async function login() {
+    const response = await axios.post(tokenUrl, {
+      email,
+      password: 'admin',
+    });
+
+    const decodedAccess = jwt.decode(response.data.access);
+    console.log('decodedAccess: ', decodedAccess);
+    const newState = {
+      tokens: response.data,
+      user: {
+        username: decodedAccess.username,
+        email: decodedAccess.email,
+        id: decodedAccess.user_id,
+      },
+    };
+    setState((prevState) => ({ ...prevState, ...newState }));
   }
 
   function logout() {
@@ -43,5 +47,7 @@ export function AuthProvider(props) {
     setState((prevState) => ({ ...prevState, ...newState }));
   }
 
-  return <AuthContext.Provider value={state}>{props.children}</AuthContext.Provider>;
+  return (
+    <AuthContext.Provider value={state}>{props.children}</AuthContext.Provider>
+  );
 }
