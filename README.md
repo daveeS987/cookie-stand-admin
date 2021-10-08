@@ -8,7 +8,7 @@ Daniel Dills, Prabin Singh, Wondwosen Tsige, Michael Ryan, Marie Marcos, Garfiel
 
 ## Links & Resources
 
-<!-- - [Deployed Link](https://cookie-stand-admin-three-red.vercel.app/) -->
+- [Deployed Link](https://cookie-stand-admin-three-red.vercel.app/)
 
 ## Overview
 
