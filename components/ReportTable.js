@@ -1,6 +1,13 @@
 import { TrashIcon } from '@heroicons/react/outline';
+import useResource from '../hooks/useResource';
 
 function ReportTable({ hours, sales }) {
+  const { deleteResource } = useResource();
+
+  const clickHandler = (id) => {
+    deleteResource(id);
+  };
+
   if (sales && sales.length === 0) {
     return (
       <h2 className="text-xl text-center text-gray-200">
@@ -28,13 +35,13 @@ function ReportTable({ hours, sales }) {
         {sales &&
           sales.map((store) => {
             return (
-              <tr
-                className="odd:bg-gray-400 even:bg-gray-300"
-                key={Math.random()}
-              >
+              <tr className="odd:bg-gray-400 even:bg-gray-300" key={store.id}>
                 <td className="flex justify-between p-2 text-left">
                   {store.location}
-                  <TrashIcon className="w-5" />
+                  <TrashIcon
+                    className="w-5"
+                    onClick={() => clickHandler(store.id)}
+                  />
                 </td>
 
                 {store.hourly_sales.map((sale) => {
