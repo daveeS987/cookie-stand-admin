@@ -28,15 +28,18 @@ function Form() {
           Create Cookie Stand
         </h2>
       </div>
-      <div className="flex mt-8">
-        <h2 className="mr-4 text-lg text-gray-200">Location:</h2>
+      <div className="flex flex-wrap items-center mt-8">
+        <h2 className="mr-2 text-lg text-gray-200">Location:</h2>
         <input
           name="location"
           type="text"
           placeholder="Enter New Location Here"
-          className="flex-grow"
+          className="flex-grow p-2 m-2"
           onChange={handleChange}
         />
+        <button className="px-10 py-2 m-2 text-gray-200 border-2 border-gray-200 rounded-md">
+          Create
+        </button>
       </div>
       <div className="flex flex-wrap justify-between gap-8 mt-8 text-center justify-items-center">
         <div className="flex-grow">
@@ -65,11 +68,6 @@ function Form() {
             className="w-full"
             onChange={handleChange}
           />
-        </div>
-        <div className="flex-grow mb-8">
-          <button className="w-full p-2 px-8 mx-2 text-gray-200 border-2 border-gray-200 rounded-md">
-            Create
-          </button>
         </div>
       </div>
     </form>
