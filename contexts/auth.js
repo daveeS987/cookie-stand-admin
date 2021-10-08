@@ -20,10 +20,10 @@ export function AuthProvider(props) {
     logout,
   });
 
-  async function login() {
+  async function login(email, password) {
     const response = await axios.post(tokenUrl, {
       email,
-      password: 'admin',
+      password,
     });
 
     const decodedAccess = jwt.decode(response.data.access);
@@ -31,8 +31,8 @@ export function AuthProvider(props) {
     const newState = {
       tokens: response.data,
       user: {
-        username: decodedAccess.username,
-        email: decodedAccess.email,
+        // username: decodedAccess.username,
+        // email: decodedAccess.email,
         id: decodedAccess.user_id,
       },
     };

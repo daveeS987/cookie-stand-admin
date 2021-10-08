@@ -15,10 +15,7 @@ function LoginForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // login('hello', 'world');
-    console.log('formItems.email: ', formItems.email);
-    console.log('formItems.password: ', formItems.password);
-    login();
+    login(formItems.email, formItems.password);
   };
 
   return (
