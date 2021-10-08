@@ -4,10 +4,6 @@ import useResource from '../hooks/useResource';
 function ReportTable({ hours, sales }) {
   const { deleteResource, loading } = useResource();
 
-  const clickHandler = (id) => {
-    deleteResource(id);
-  };
-
   if (sales && sales.length === 0) {
     return (
       <h2 className="text-xl text-center text-gray-200">
@@ -40,7 +36,7 @@ function ReportTable({ hours, sales }) {
                   {store.location}
                   <TrashIcon
                     className="w-5"
-                    onClick={() => clickHandler(store.id)}
+                    onClick={() => deleteResource(store.id)}
                   />
                 </td>
 

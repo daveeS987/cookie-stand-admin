@@ -5,8 +5,6 @@ import { hours } from '../data.js';
 
 function Main() {
   const { resources, loading } = useResource();
-  console.log('🚀 ~ loading: ', loading);
-  console.log('resources: ', resources);
 
   return (
     <div>
