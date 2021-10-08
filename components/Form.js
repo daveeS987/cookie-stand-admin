@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import useResource from '../hooks/useResource';
 
-function Form({ updateReport }) {
+function Form() {
   const [formItems, setFormItems] = useState({});
+  const { createResource } = useResource();
 
   const handleChange = (e) => {
     const newFormItems = {
@@ -13,7 +15,8 @@ function Form({ updateReport }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    updateReport(formItems);
+    console.log('formItems: ', formItems);
+    createResource(formItems);
   };
 
   return (
@@ -40,7 +43,7 @@ function Form({ updateReport }) {
         <div className="flex-grow">
           <h2 className="text-gray-300">Minimum Customer Per Hour</h2>
           <input
-            name="minCustomers"
+            name="minimum_customers_per_hour"
             type="number"
             className="w-full"
             onChange={handleChange}
@@ -49,7 +52,7 @@ function Form({ updateReport }) {
         <div className="flex-grow">
           <h2 className="text-gray-300">Maximum Customer Per Hour</h2>
           <input
-            name="maxCustomers"
+            name="maximum_customers_per_hour"
             type="number"
             className="w-full"
             onChange={handleChange}
@@ -58,7 +61,7 @@ function Form({ updateReport }) {
         <div className="flex-grow">
           <h2 className="text-gray-300">Average Cookies Per Sale</h2>
           <input
-            name="avgCookies"
+            name="average_cookies_per_sale"
             type="number"
             className="w-full"
             onChange={handleChange}

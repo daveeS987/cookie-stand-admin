@@ -1,4 +1,4 @@
-import React from 'react';
+import { TrashIcon } from '@heroicons/react/outline';
 
 function ReportTable({ hours, sales }) {
   if (sales && sales.length === 0) {
@@ -32,7 +32,11 @@ function ReportTable({ hours, sales }) {
                 className="odd:bg-gray-400 even:bg-gray-300"
                 key={Math.random()}
               >
-                <td className="p-2 text-left">{store.location}</td>
+                <td className="flex justify-between p-2 text-left">
+                  {store.location}
+                  <TrashIcon className="w-5" />
+                </td>
+
                 {store.hourly_sales.map((sale) => {
                   return <td>{sale}</td>;
                 })}
