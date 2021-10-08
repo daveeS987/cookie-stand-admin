@@ -4,7 +4,7 @@
 
 ## Collaborators
 
-Daniel Dills, Prabin Singh, Wondwosen Tsige, Michael Ryan
+Daniel Dills, Prabin Singh, Wondwosen Tsige, Michael Ryan, Marie Marcos, Garfield Grant
 
 ## Links & Resources
 

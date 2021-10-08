@@ -2,7 +2,7 @@ import { TrashIcon } from '@heroicons/react/outline';
 import useResource from '../hooks/useResource';
 
 function ReportTable({ hours, sales }) {
-  const { deleteResource } = useResource();
+  const { deleteResource, loading } = useResource();
 
   const clickHandler = (id) => {
     deleteResource(id);
