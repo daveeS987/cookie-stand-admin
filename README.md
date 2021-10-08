@@ -25,3 +25,5 @@ NEXT_PUBLIC_RESOURCE_URL=http://localhost:8000/api/v1/cookie_stand/
 ```
 
 ## Notes
+
+test
